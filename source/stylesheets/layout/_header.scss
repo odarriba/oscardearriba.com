@@ -1,0 +1,47 @@
+header {
+  @extend .container;
+
+  position: relative;
+  padding: 1em 0;
+  margin: 1em auto;
+  border-bottom: 1px solid $c-grey;
+
+  .brand {
+    float: left;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+  }
+
+  .menu {
+    float:right;
+    margin-top: 10px;
+    margin-bottom: 0;
+
+    text-transform: lowercase;
+
+    li {
+      float: left;
+      list-style: none;
+
+      &:after {
+        margin: 0 15px;
+        content: "|";
+      }
+
+      &:last-child {
+        &:after {
+          margin: 0;
+          content: "";
+        }
+      }
+    }
+  }
+
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
