@@ -1,0 +1,35 @@
+section {
+  h2 {
+    text-transform: lowercase;
+  }
+
+  &.with-separator {
+    position: relative;
+    padding-bottom: 28px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid $c-grey;
+
+    &:after {
+      position: absolute;
+      content: " ";
+      width: 5px;
+      height: 5px;
+      border: 1px solid $c-grey;
+      border-radius: 50%;
+      left: 50%;
+      margin-left: -3px;
+      bottom: -4px;
+      background: white;
+    }
+  }
+}
+
+img.photo {
+  width: 200px;
+  padding: 5px;
+  margin: 20px auto;
+
+  border: 1px solid $c-grey;
+  border-radius: 10%;
+  background-color: white;
+}

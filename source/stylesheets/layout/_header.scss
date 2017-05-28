@@ -10,6 +10,8 @@ header {
     float: left;
     font-size: 1.7rem;
     text-transform: uppercase;
+    font-family: "Inconsolata", sans-serif;
+    font-weight: lighter;
   }
 
   .menu {
@@ -23,8 +25,12 @@ header {
       float: left;
       list-style: none;
 
+      a:hover {
+        text-decoration: none;
+      }
+
       &:after {
-        margin: 0 15px;
+        margin: 0 16px 0 8px;
         content: "|";
       }
 
