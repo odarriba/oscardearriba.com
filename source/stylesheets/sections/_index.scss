@@ -1,3 +1,8 @@
+h1.brand {
+  text-align: center;
+  font-family: "Inconsolata", sans-serif;
+}
+
 section {
   h2 {
     text-transform: lowercase;
@@ -27,7 +32,7 @@ section {
 img.photo {
   width: 200px;
   padding: 5px;
-  margin: 20px auto;
+  margin: 40px auto;
 
   border: 1px solid $c-grey;
   border-radius: 10%;

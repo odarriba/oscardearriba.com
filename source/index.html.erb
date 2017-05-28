@@ -4,8 +4,12 @@ title: Start
 
 <%= image_tag 'oscar.jpg', class: 'photo' %>
 
+<section class='title with-separator'>
+  <h1 class='brand'>Oscar de Arriba </h1>
+</section>
+
 <section class='about with-separator' id='about'>
-  <h2>About</h2>
+  <h2>About me</h2>
 
   <p>Hello! My name is Oscar de Arriba, a Software Engineer based in Spain and currently working in <%= link_to("The Book of Everyone", "https://thebookofeveryone.com/", target: '_blank') %>.</p>
 
@@ -13,7 +17,7 @@ title: Start
 
   <p>I love designing and building high availability systems, and to archieve that I've been experiencing dev-ops technicques like clustering containerized applications.</p>
 
-  <p>I also like to spend some of my free time with Maria and our fantastic cats, Ginebra and Micaela.</p>
+  <p>I also like to spend some of my free time with <%= link_to("Maria", "https://www.instagram.com/metamorphosis91/", target: '_blank') %> and our fantastic cats, <%= link_to("Ginebra", "https://www.instagram.com/p/BRBbUXtjxoM/", target: '_blank') %> and <%= link_to("Micaela", "https://www.instagram.com/p/BTXJGN6D7FO/", target: '_blank') %>.</p>
 </section>
 
 <section class='blog with-separator' id='blog'>
@@ -22,10 +26,10 @@ title: Start
   <p>I use to write my technical posts (and sometimes only some thoughts) on <%= link_to("Medium", "https://medium.com/@odarriba", target: '_blank') %>, so you can read them there.</p>
 </section>
 
-<section class='contact' id='contact'>
+<section class='contact with-separator' id='contact'>
   <h2>Contact me</h2>
 
-  <p>You can found me in <%= link_to("Twitter", "https://twitter.com/odarriba", target: '_blank') %>, <%= link_to("Github", "https://github.com/odarriba", target: '_blank') %> or <%= link_to("Linkedin", "https://twitter.com/odarriba", target: '_blank') %>.</p>
+  <p>You can found my thoughts on <%= link_to("Twitter", "https://twitter.com/odarriba", target: '_blank') %>, my code on <%= link_to("Github", "https://github.com/odarriba", target: '_blank') %>, my photos on <%= link_to("Instagram", "https://instagram.com/odarriba", target: '_blank') %> and my professional experience on <%= link_to("Linkedin", "https://twitter.com/odarriba", target: '_blank') %>.</p>
 
   <p>You can also reach me by mail: <b>hey at oscardearriba dot com<b/>.</p>
 </section>
