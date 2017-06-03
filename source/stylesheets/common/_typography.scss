@@ -16,7 +16,7 @@ a {
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, {
   -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
   -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
   -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
@@ -35,14 +35,6 @@ h2 {
   font-size: 1.5rem;
   letter-spacing: -1px;
 }
-h3 {
-  margin-top: 1.5rem;
-  font-size: 1.25rem;
-}
-h4, h5, h6 {
-  margin-top: 1rem;
-  font-size: 1rem;
-}
 
 /* Body text */
 p {
@@ -52,10 +44,4 @@ p {
 
 strong {
   color: #303030;
-}
-
-/* Lead */
-.lead {
-  font-size: 1rem;
-  font-weight: 300;
 }

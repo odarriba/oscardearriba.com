@@ -4,17 +4,28 @@ h1.brand {
   font-weight: lighter;
   letter-spacing: 0;
   font-size: 3rem;
-  line-height: 1em;
+  line-height: 95px;
+
+  padding-top: 5px;
   margin-bottom: 5px;
 
-  @media (max-width: 480px) {
+  @media (max-width: $mobile-width) {
     font-size: 2rem;
+    line-height: 1em;
   }
 }
 
 section {
   h2 {
     text-transform: lowercase;
+  }
+
+  &.title {
+    margin-top: 30px;
+  }
+
+  &.contact {
+    margin-bottom: 60px;
   }
 
   &.with-separator {
@@ -35,15 +46,26 @@ section {
       bottom: -4px;
       background: white;
     }
+
+    @media (max-width: $mobile-width) {
+      padding-bottom: 13px;
+      margin-bottom: 25px;
+    }
   }
 }
 
 img.photo {
-  width: 200px;
-  padding: 5px;
-  margin: 30px auto;
+  width: 100px;
+  padding: 2px;
+  float: left;
 
   border: 1px solid $c-grey;
-  border-radius: 10%;
+  border-radius: 50%;
   background-color: white;
+
+  @media (max-width: $mobile-width) {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
